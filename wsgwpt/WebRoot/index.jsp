@@ -36,7 +36,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							} else {
 						%>
 						
-						<a><%= flagName %> 欢迎使用</a>
+						<a><%= flagName %> 欢迎光临</a>
 						<%
 							}
 						%>

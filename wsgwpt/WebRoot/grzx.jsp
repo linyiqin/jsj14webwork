@@ -239,13 +239,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                             String xq ;
                             switch(weekDay)
                             {
-                            case 1:xq="一";break;
-                            case 2:xq="二";break;
-                            case 3:xq="三";break;
-                            case 4:xq="四";break;
-                            case 5:xq="五";break;
-                            case 6:xq="六";break;
-                            case 7:xq="日";break;
+                            case 1:xq="天";break;
+                            case 2:xq="一";break;
+                            case 3:xq="二";break;
+                            case 4:xq="三";break;
+                            case 5:xq="四";break;
+                            case 6:xq="五";break;
+                            case 7:xq="六";break;
                             default :xq="天";break;
                             }
 							 %> 
@@ -292,7 +292,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<li class="person">
 						<a href="">我的交易</a>
 						<ul>
-							<li><a href="">订单管理</a></li>
+							<li><a href="ddym.jsp">订单管理</a></li>
 							<li> <a href="">退款售后</a></li>
 						</ul>
 					</li>
