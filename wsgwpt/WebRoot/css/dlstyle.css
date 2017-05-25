@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*公共*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: arial,"Lantinghei SC","Microsoft Yahei";	
+}
+
+html,body {
+	height: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+hr{margin:5px 5px}
+.clear{ clear:both;}
+.login-box {width: 100%;}
+.login-banner-bg,.login-boxtitle{display: none;}
+
+/*标题*/
+h3.title{text-align: center;padding:8px;font-weight: 600;}
+.zcnext{position: absolute;right:5px;top:5px ;padding:5px;font-size:14px ;}
+
+/*主题*/
+.login-form{background:#fff ;width: 100%;}
+form{max-width:320px;margin:20px auto ;}
+
+form input{font-size: 8px;line-height: 17px;height:21px;padding: 11px 8px 11px 50px;width:80%;border:1px solid #fff;}
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px #fff inset;}
+.am-cf{width: 100%;max-width:320px;margin:0px auto ;}
+.am-cf input{width: 100%;font-size: 14px;}
+.login-links{max-width:320px;margin:20px auto ;font-size:14px;}
+
+/*注册*/
+.verification {position: relative;}
+input#code {width: 80%;}
+#dyMobileButton{margin-left: 10px;border: 1px solid #DDD;padding: 0px;width: 15%;height: 40px;background: #F4F4F4 none repeat scroll 0% 0%;margin-top: 0px;text-align: center;line-height:40px;color: #333;text-decoration: none;position: absolute;right: 0px;bottom: 0px;}
+
+
+/*修改的样式*/
+#doc-my-tabs li.am-active a,#doc-my-tabs li a{ background:#f8f8f8;}
+.am-tabs-bd{border: none;}
+.am-nav-tabs.am-nav-justify li {padding:5px;}
+.am-nav-tabs>li>a,.am-nav-tabs.am-nav-justify>li>a,.am-nav-tabs.am-nav-justify>.am-active>a,.am-nav-tabs>li.am-active>a, .am-nav-tabs>li.am-active>a:focus, .am-nav-tabs>li.am-active>a:hover {border: none; color: #000;font-weight: 600;}
+.am-nav-tabs.am-nav-justify > .am-active> a, .am-nav-tabs.am-nav-justify>.am-active>a:focus, .am-nav-tabs.am-nav-justify>.am-active>a:hover ,.am-nav-tabs>li.am-active>a,.am-nav-tabs>li.am-active>a:focus, .am-nav-tabs>li.am-active>a:hover {
+margin-right: 0px;border-bottom: 1px solid #0e90d2;border-radius: 0px;}
+
+ /*底部*/
+.footer {text-align:center;font-size: 12px;padding-top: 5px;}
+.footer-bd{ display:none;}
+
+@media screen and (min-width:640px){
+form,.am-cf,.partner{max-width:640px;margin:20px auto ;}
+.footer-bd{ display:block;}	
+.partner h3 {text-align:left;}
+.am-btn-group i { display:inline-block;border-radius:0px;border:0px;background-color:transparent ;}
+.am-btn-group span{display:inline-block;}
+.am-cf input{width: 100%;font-size: 23px;color: #fff;border: 0px solid rgba(0, 0, 0, 0.3);
+	background: #64c8ef; /* Old browsers */
+	background: -moz-linear-gradient(top,  #64c8ef 0%, #00a2e2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#64c8ef), color-stop(100%,#00a2e2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #64c8ef 0%,#00a2e2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2',GradientType=0 ); /* IE6-9 */}
+
+}
+@media screen and (min-width:1025px){
+
+.login-box,.login-box2 {width: 80%;max-width:300px;height: 300px;position: absolute;margin-top:70px;margin-left:0px;background-color: rgba(250,250,250,1.0);right:2%;padding:10px 20px;}
+.login-box2 {height:430px;}
+.login-boxtitle {max-width: 1000px;margin: 0px auto;height: 60px;}
+.login-boxtitle img{height:60px;}
+.login-banner,.res-banner{width:1024;height:470px; background:#fd7a72;}
+.login-main,.res-main{max-width:1000px;height:470px; margin:0px auto; position:relative;}
+
+/*头部*/
+.login-boxtitle{display:block ;}
+.zcnext{right: 20px;top: 15px;}
+/*背景*/
+.login-banner-bg{display:block;float:left;} 
+.am-btn-primary{width:100%;}
+
+/*修改的样式*/
+#doc-my-tabs li.am-active a,#doc-my-tabs li a{ background:;}
+.am-nav-tabs>li>a,.am-nav-tabs.am-nav-justify>li>a,.am-nav-tabs.am-nav-justify>.am-active>a,.am-nav-tabs>li.am-active>a, .am-nav-tabs>li.am-active>a:focus, .am-nav-tabs>li.am-active>a:hover {border: none; }
+	}
+

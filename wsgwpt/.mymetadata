@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="wsgwpt"
+  id="myeclipse.1493022902791"
+  context-root="/wsgwpt"
+  j2ee-spec="5.0"
+  archive="wsgwpt.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
