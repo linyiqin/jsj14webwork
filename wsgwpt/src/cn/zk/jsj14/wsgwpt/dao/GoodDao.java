@@ -46,4 +46,32 @@ public class GoodDao {
 			}
 			return list;
 		}
+
+		public Goods_imformation buyGood(String id) throws SQLException {
+			Connection conn = null;
+			ResultSet rs = null;
+			conn = DBUtil.getConnection();
+			String sql = "select * from goods_imformation where goods_id='"+id+"'";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			String goodsid="";
+			String goodsname="";
+			Double goodsamount= null ;
+			String goodstype="";
+			Double goodprice=null;
+			rs = ps.executeQuery();
+			while(rs.next()) {
+			 goodsid = rs.getString("goods_id");
+			 goodsname = rs.getString("goods_name");
+			 goodsamount = rs.getDouble("goods_amount");
+			 goodstype = rs.getString("goods_type");
+			 goodprice = rs.getDouble("good_price");
+			}
+			Goods_imformation good = new Goods_imformation();
+			good.setGoods_id(goodsid);
+			good.setGoods_name(goodsname);
+			good.setGoods_type(goodstype);
+			good.setGoods_amount(goodsamount);
+			good.setGood_price(goodprice);
+			return good;
+		}
 }

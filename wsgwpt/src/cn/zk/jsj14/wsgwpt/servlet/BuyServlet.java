@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import cn.zk.jsj14.wsgwpt.domain.Shopping_cart;
-import cn.zk.jsj14.wsgwpt.service.ShopcartService;
+import cn.zk.jsj14.wsgwpt.domain.Goods_imformation;
+import cn.zk.jsj14.wsgwpt.service.GoodService;
 
 public class BuyServlet extends HttpServlet {
 
@@ -25,12 +25,12 @@ public class BuyServlet extends HttpServlet {
 		//获得jsp页面参数
 		String id = (String)request.getParameter("goods_id");
 		//调用业务逻辑
-				ShopcartService ga = new ShopcartService();
-				Shopping_cart shopcart = ga.buyGood(id);
-				 request.setAttribute("shopcart", shopcart);
+				GoodService ga = new GoodService();
+				Goods_imformation good = ga.buyGoods(id);
+				 request.setAttribute("goods", good);
 				//跳转页面
 				RequestDispatcher rd = null;
-				rd = request.getRequestDispatcher("/tjdd.jsp");
+				rd = request.getRequestDispatcher("/buytjdd.jsp");
 				rd.forward(request, response);	
 		
 	}

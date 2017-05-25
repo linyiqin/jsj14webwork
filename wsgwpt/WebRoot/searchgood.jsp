@@ -107,7 +107,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<a href="login.jsp">加入购物车</a> <a href="login.jsp">购买</a> 
  	                        <%   } else {
                              %> <a href="./AddShopcartServlet?goods_id=${b.goods_id }">加入购物车</a>
-												<a href="zjbuy.jsp?goods_id=${b.goods_id }">购买</a> 
+												<a href="./BuyServlet?goods_id=${b.goods_id }">购买</a> 
                             <% } %>
 												
 											</p>

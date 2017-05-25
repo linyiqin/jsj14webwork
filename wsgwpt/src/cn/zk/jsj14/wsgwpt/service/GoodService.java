@@ -27,6 +27,14 @@ public class GoodService {
 				}
 				return null;
 			}
+			public Goods_imformation buyGoods(String id) {
+				try {
+					return goodDao.buyGood(id);
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+				return null;
+			}
 			
 
 }
