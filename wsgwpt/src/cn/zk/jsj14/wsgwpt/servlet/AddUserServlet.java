@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import cn.zk.jsj14.wsgwpt.domain.User;
 import cn.zk.jsj14.wsgwpt.service.UserServiceImpl;
@@ -34,6 +35,11 @@ public class AddUserServlet extends HttpServlet {
 				ua.addUser(user);
 				//跳转页面
 				RequestDispatcher rd = null;
+				String msg = userName;
+				//使用request对象的getSession()获取session，如果session不存在则创建一个
+				HttpSession session = request.getSession();
+				//将数据存储到session中
+		        session.setAttribute("data", msg);
 				rd = request.getRequestDispatcher("/index.jsp");
 				rd.forward(request, response);	
 	}

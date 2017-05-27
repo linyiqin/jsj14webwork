@@ -109,7 +109,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<div class="am-form-group">
 							<label for="user-confirm-password" class="am-form-label">商品数量</label>
 							<div class="am-form-content">
-								<input type="text" id="goods_amount" name="goods_amount" readonly="true" value="1">
+								<input type="text" id="goods_amount" name="goods_amount"  value="1">
 							</div>
 						</div>
 						<div class="am-form-group">
