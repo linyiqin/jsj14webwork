@@ -65,7 +65,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					   <div class="nav-cont">
 							<ul>
 								<li class="index"><a href="index.jsp">首页</a></li>
-                                <li class="qc"><a href="#">店铺</a></li>
+                                <li class="qc"><a href="">店铺</a></li>
                                 <li class="qc"><a href="goods.jsp">商品</a></li>
 							</ul>
 						</div>
@@ -92,6 +92,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<label for="user-old-password" class="am-form-label">用户名</label>
 							<div class="am-form-content">
 								<input type="text" id="name" name="name" value="<%=as.getString("user_name") %>">
+								<input type="hidden"  name="method" id="method" value="grzx">
 							</div>
 						</div>
 						<div class="am-form-group">

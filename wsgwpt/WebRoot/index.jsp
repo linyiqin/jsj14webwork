@@ -40,6 +40,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<%
 							}
 						%>
+						<a href="shoplogin.jsp">(商家版)</a><a href="yyslogin.jsp">(小二版)</a>
 					</div>
 					</div>
 				</ul>

@@ -35,6 +35,28 @@ public class GoodService {
 				}
 				return null;
 			}
+			public Goods_imformation ckGood(String goodid) {
+				try {
+					return goodDao.ckGood(goodid);
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+				return null;
+			}
+			public void updateGood(Goods_imformation good) {
+				try {
+					goodDao.updateGood(good);
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			public void delGood(String goodid) {
+				try {
+					goodDao.delGood(goodid);
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
 			
 
 }

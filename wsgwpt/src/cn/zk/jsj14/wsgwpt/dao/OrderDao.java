@@ -76,4 +76,59 @@ public class OrderDao {
 						
 						
 		}
+
+		public Order ckOrder(String orderid) throws SQLException {
+			Connection conn = null;
+			ResultSet rs = null;
+			conn = DBUtil.getConnection();
+			String sql = "select * from purchase_order where order_id='"+orderid+"'";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			String goodsid="";
+			String goodsname="";
+			Double orderamount= null ;
+			String ordertype="";
+			Double orderprice=null;
+			String orderusername="";
+			String orderusertel="";
+			String orderuseraddress="";
+			rs = ps.executeQuery();
+			while(rs.next()) {
+			 goodsid = rs.getString("goods_id");
+			 goodsname = rs.getString("goods_name");
+			 orderamount = rs.getDouble("order_amount");
+			 ordertype = rs.getString("order_state");
+			 orderprice = rs.getDouble("order_price");
+			 orderusername = rs.getString("user_name");
+			 orderusertel = rs.getString("user_tel");
+			 orderuseraddress = rs.getString("user_address");
+			}
+			Order order = new Order();
+			order.setOrder_id(orderid);
+			order.setGoods_id(goodsid);
+			order.setGoods_name(goodsname);
+			order.setOrder_state(ordertype);
+			order.setOrder_amount(orderamount);
+			order.setOrder_price(orderprice);
+			order.setUser_name(orderusername);
+			order.setUser_tel(orderusertel);
+			order.setUser_address(orderuseraddress);
+			return order;
+		}
+
+		public void updateOrder(Order order) throws SQLException {
+			// 连接数据库
+			Connection conn = null;
+			conn = DBUtil.getConnection();
+			String sql = "update purchase_order set goods_id=?,order_amount=?,order_state=?,user_name=?,user_tel=?,user_address=?,order_price=?,goods_name=? where order_id ='"+order.getOrder_id()+"'";
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1,order.getGoods_id());
+			pstmt.setDouble(2,order.getOrder_amount());
+			pstmt.setString(3,order.getOrder_state());
+			pstmt.setString(4,order.getUser_name());
+			pstmt.setString(5,order.getUser_tel());
+			pstmt.setString(6,order.getUser_address());
+			pstmt.setDouble(7,order.getOrder_price());
+			pstmt.setString(8,order.getGoods_name());
+			pstmt.executeUpdate();
+		}
 }

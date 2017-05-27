@@ -111,11 +111,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									<a class="i-load-more-item-shadow" href="ddym.jsp">全部订单</a>
 								</div>
 								<ul>
-									<li><a href="order.html"><i><img src="images/grzx/pay.png"/></i><span>待付款</span></a></li>
-									<li><a href="order.html"><i><img src="images/grzx/send.png"/></i><span>待发货<em class="m-num"></em></span></a></li>
-									<li><a href="order.html"><i><img src="images/grzx/receive.png"/></i><span>待收货</span></a></li>
-									<li><a href="order.html"><i><img src="images/grzx/comment.png"/></i><span>待评价<em class="m-num"></em></span></a></li>
-									<li><a href="change.html"><i><img src="images/grzx/refund.png"/></i><span>退换货</span></a></li>
+									<li><a href=""><i><img src="images/grzx/pay.png"/></i><span>待付款</span></a></li>
+									<li><a href=""><i><img src="images/grzx/send.png"/></i><span>待发货<em class="m-num"></em></span></a></li>
+									<li><a href=""><i><img src="images/grzx/receive.png"/></i><span>待收货</span></a></li>
+									<li><a href=""><i><img src="images/grzx/comment.png"/></i><span>待评价<em class="m-num"></em></span></a></li>
+									<li><a href=""><i><img src="images/grzx/refund.png"/></i><span>退换货</span></a></li>
 								</ul>
 							</div>
 							
@@ -282,7 +282,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<a href="grzx.jsp">个人中心</a>
 					</li>
 					<li class="person">
-						<a href="">个人资料</a>
+						<a >个人资料</a>
 						<ul>
 							<li> <a href="xgyhxx.jsp">修改信息</a></li>
 							<li> <a href="xgmm.jsp">修改密码</a></li>
@@ -290,28 +290,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</ul>
 					</li>
 					<li class="person">
-						<a href="">我的交易</a>
+						<a >我的交易</a>
 						<ul>
 							<li><a href="ddym.jsp">订单管理</a></li>
-							<li> <a href="">退款售后</a></li>
+							<li> <a >退款售后</a></li>
 						</ul>
 					</li>
 					<li class="person">
-						<a href="#">我的资产</a>
+						<a >我的资产</a>
 						<ul>
-							<li> <a href="">优惠券 </a></li>
-							<li> <a href="">红包</a></li>
-							<li> <a href="">账单明细</a></li>
+							<li> <a >优惠券 </a></li>
+							<li> <a >红包</a></li>
+							<li> <a >账单明细</a></li>
 						</ul>
 					</li>
 
 					<li class="person">
-						<a href="#">我的小窝</a>
+						<a">我的小窝</a>
 						<ul>
-							<li> <a href="">收藏</a></li>
-							<li> <a href="">足迹</a></li>
-							<li> <a href="">评价</a></li>
-							<li> <a href="">消息</a></li>
+							<li> <a >收藏</a></li>
+							<li> <a >足迹</a></li>
+							<li> <a >评价</a></li>
+							<li> <a >消息</a></li>
 						</ul>
 					</li>
 

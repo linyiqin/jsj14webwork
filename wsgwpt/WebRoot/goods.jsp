@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <base href="<%=basePath%>">
    <title>商品页面</title>
 		<link href="css/amazeui.css" rel="stylesheet" type="text/css" />
-		<link href="/css/admin.css" rel="stylesheet" type="text/css" />
+		<link href="css/admin.css" rel="stylesheet" type="text/css" />
 		<link href="css/demo.css" rel="stylesheet" type="text/css" />
 		<link href="css/seastyle.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="js/jquery-1.7.min.js"></script>

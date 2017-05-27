@@ -84,6 +84,125 @@
     <servlet-name>BuyServlet</servlet-name>
     <servlet-class>cn.zk.jsj14.wsgwpt.servlet.BuyServlet</servlet-class>
   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YYSloginServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.YYSloginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateyysServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.UpdateyysServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CkShop1Servlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.CkShop1Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateShopServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.UpdateShopServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelShopServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.DelShopServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelUserServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.DelUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CkUserServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.CkUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YUpdateUserServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.YUpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShopLoginServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.ShopLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Update1ShopServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.Update1ShopServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateshoppwdServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.UpdateshoppwdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CkGoodServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.CkGoodServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateGoodServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.UpdateGoodServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelGoodServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.DelGoodServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CkOrderServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.CkOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateOrderServlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.UpdateOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelOrder1Servlet</servlet-name>
+    <servlet-class>cn.zk.jsj14.wsgwpt.servlet.DelOrder1Servlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -148,6 +267,74 @@
   <servlet-mapping>
     <servlet-name>BuyServlet</servlet-name>
     <url-pattern>/BuyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YYSloginServlet</servlet-name>
+    <url-pattern>/YYSloginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateyysServlet</servlet-name>
+    <url-pattern>/UpdateyysServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CkShop1Servlet</servlet-name>
+    <url-pattern>/CkShop1Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateShopServlet</servlet-name>
+    <url-pattern>/UpdateShopServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelShopServlet</servlet-name>
+    <url-pattern>/DelShopServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelUserServlet</servlet-name>
+    <url-pattern>/DelUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CkUserServlet</servlet-name>
+    <url-pattern>/CkUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YUpdateUserServlet</servlet-name>
+    <url-pattern>/YUpdateUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShopLoginServlet</servlet-name>
+    <url-pattern>/ShopLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Update1ShopServlet</servlet-name>
+    <url-pattern>/Update1ShopServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateshoppwdServlet</servlet-name>
+    <url-pattern>/UpdateshoppwdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CkGoodServlet</servlet-name>
+    <url-pattern>/CkGoodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateGoodServlet</servlet-name>
+    <url-pattern>/UpdateGoodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelGoodServlet</servlet-name>
+    <url-pattern>/DelGoodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CkOrderServlet</servlet-name>
+    <url-pattern>/CkOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateOrderServlet</servlet-name>
+    <url-pattern>/UpdateOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelOrder1Servlet</servlet-name>
+    <url-pattern>/DelOrder1Servlet</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>

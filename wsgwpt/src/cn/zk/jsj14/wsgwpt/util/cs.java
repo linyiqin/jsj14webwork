@@ -6,37 +6,24 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.zk.jsj14.wsgwpt.domain.Carrieroperator;
+import cn.zk.jsj14.wsgwpt.domain.User;
+
 public class cs {
 
-	/**
-	 * @param <declared>
-	 * @param args
-	 */
 	public static <declared> void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
-		Connection conn = null;
-		PreparedStatement ps = null;
-		ResultSet rs = null;
 		// 连接数据库
+		Connection conn = null;
 		conn = DBUtil.getConnection();
-		if (conn == null) {
-			throw new Exception("数据库连接不成功！");
-		}
-		String userName = "零食";
-		String sqlQuery = "Select * from goods_imformation where goods_name like '%"+userName+"%'";
-		ps = conn.prepareStatement(sqlQuery);   
-		 rs = ps.executeQuery();
-		   
-			
-				while(rs.next()){
-					String b =rs.getString("goods_name");
-					System.out.println(b);
-				}
-			
-		
-	  System.out.println("userName");
-		
-}
+		String name="明明";
+		String sql = "update user set user_tel=?,user_truename=?,user_address=? where user_name='"+name+"'";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(2,"黄某某");
+		pstmt.setString(1,"13675657987");
+		pstmt.setString(3,"广东省广州市海珠区滨江东路765号");
+		pstmt.executeUpdate();
 	}
+}
+	
 
 

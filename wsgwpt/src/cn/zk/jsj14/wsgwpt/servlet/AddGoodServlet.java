@@ -43,7 +43,7 @@ public class AddGoodServlet extends HttpServlet {
 						ga.addGood(good);
 						//Ìø×ªÒ³Ãæ
 						RequestDispatcher rd = null;
-						rd = request.getRequestDispatcher("/index.jsp");
+						rd = request.getRequestDispatcher("/shopglzx.jsp");
 						rd.forward(request, response);	
 		
 	}

@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import cn.zk.jsj14.wsgwpt.domain.Order;
-import cn.zk.jsj14.wsgwpt.domain.Shopping_cart;
 import cn.zk.jsj14.wsgwpt.service.OrderService;
 import cn.zk.jsj14.wsgwpt.service.ShopcartService;
 

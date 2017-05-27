@@ -31,4 +31,22 @@ public class OrderService {
 			orderDao.addOrder(order_id,goods_id,user_name,user_tel,user_address);
 			
 		}
+
+		public Order ckOrder(String orderid) {
+			try {
+			return	orderDao.ckOrder(orderid);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			return null;
+		}
+
+		public void updateOrder(Order order) {
+			try {
+				orderDao.updateOrder(order);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+		}
 }

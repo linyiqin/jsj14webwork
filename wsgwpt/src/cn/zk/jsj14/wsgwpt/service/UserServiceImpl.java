@@ -34,5 +34,31 @@ public class UserServiceImpl {
 						e.printStackTrace();
 					}
 				}
+				//删除用户
+				public void delUser(String username) {
+					try {
+						userDao.delUser(username);
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
+					
+					
+				}
+				//查询用户信息
+				public User selectUser(String username)  {
+					try {
+						return userDao.selectUser(username);
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
+					return null;
+				}
+				public void yupdateUser(User user1) {
+					try {
+						userDao.yupdateUser(user1);
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
+				}
 
 }

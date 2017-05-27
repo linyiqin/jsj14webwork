@@ -28,6 +28,7 @@ public class UpdateUserServlet extends HttpServlet {
 				String userTruename =(String) request.getParameter("truename");
 				String userTel = (String) request.getParameter("tel");
 				String userAddress = (String) request.getParameter("address");
+				String method = (String) request.getParameter("method");
 				//打包处理，形成一个user对象，以便于后面传递参数使用
 						User user  = new User();
 						user.setUser_name(userName);
@@ -40,7 +41,11 @@ public class UpdateUserServlet extends HttpServlet {
 						ua.updateUser(user);
 						//跳转页面
 						RequestDispatcher rd = null;
-						rd = request.getRequestDispatcher("/grzx.jsp");
+						if(method.equals("yys")){
+							rd = request.getRequestDispatcher("/yysglzx.jsp");
+						}else{
+							rd = request.getRequestDispatcher("/grzx.jsp");
+						}	
 						rd.forward(request, response);	
 	}
 	public void doPost(HttpServletRequest request, HttpServletResponse response)

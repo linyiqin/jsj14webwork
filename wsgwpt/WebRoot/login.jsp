@@ -38,7 +38,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								 
 								<a href="zc.jsp" class="zcnext am-fr am-btn-default">注册</a>
 								<div class="am-cf">
-									<input type="submit" name="" value="登录" >
+									<input type="submit" name="" value="登录" ><br><br>
+									
 								</div>
              </form>
 				</div>

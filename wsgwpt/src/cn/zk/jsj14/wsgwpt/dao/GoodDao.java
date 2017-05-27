@@ -74,4 +74,54 @@ public class GoodDao {
 			good.setGood_price(goodprice);
 			return good;
 		}
+
+		public Goods_imformation ckGood(String goodid) throws SQLException {
+			Connection conn = null;
+			ResultSet rs = null;
+			conn = DBUtil.getConnection();
+			String sql = "select * from goods_imformation where goods_id='"+goodid+"'";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			String goodsid="";
+			String goodsname="";
+			Double goodsamount= null ;
+			String goodstype="";
+			Double goodprice=null;
+			rs = ps.executeQuery();
+			while(rs.next()) {
+			 goodsid = rs.getString("goods_id");
+			 goodsname = rs.getString("goods_name");
+			 goodsamount = rs.getDouble("goods_amount");
+			 goodstype = rs.getString("goods_type");
+			 goodprice = rs.getDouble("good_price");
+			}
+			Goods_imformation good = new Goods_imformation();
+			good.setGoods_id(goodsid);
+			good.setGoods_name(goodsname);
+			good.setGoods_type(goodstype);
+			good.setGoods_amount(goodsamount);
+			good.setGood_price(goodprice);
+			return good;
+		}
+
+		public void updateGood(Goods_imformation good) throws SQLException {
+		// 连接数据库
+		Connection conn = null;
+		conn = DBUtil.getConnection();
+		String sql = "update goods_imformation set goods_name=?,goods_amount=?,goods_type=?,good_price=? where goods_id ='"+good.getGoods_id()+"'";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, good.getGoods_name());
+		pstmt.setDouble(2, good.getGoods_amount());
+		pstmt.setString(3, good.getGoods_type());
+		pstmt.setDouble(4, good.getGood_price());
+		pstmt.executeUpdate();
+		}
+
+		public void delGood(String goodid) throws SQLException {
+			// 连接数据库
+			Connection conn = null;
+			conn = DBUtil.getConnection();
+			String sql = "delete from goods_imformation where goods_id ='"+goodid+"'";
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.executeUpdate();
+		}
 }

@@ -5,8 +5,6 @@ import cn.zk.jsj14.wsgwpt.domain.User;
 
 
 public class LoginService {
-	
-
 	/**
 	 * 
 	 * @param user
